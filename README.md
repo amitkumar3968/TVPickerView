@@ -7,7 +7,8 @@ TV picker view with increment decrement operators. This view is easy to configur
     1. First update all Ruby gems: [sudo] gem update
     2. Install the CocoaPods gem: [sudo] gem install cocoapods
     3. Setup CocoaPods on your system: pod setup
-    For [using CocoaPods](http://nsscreencast.com/episodes/5-cocoapods) watch this screencast.
+    
+For [using CocoaPods](http://nsscreencast.com/episodes/5-cocoapods) watch this screencast.
     
 ##Installation without CocoaPods
     1. Clone the TVPickerView to some directory on your machine.
