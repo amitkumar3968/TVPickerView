@@ -1,22 +1,48 @@
 ##TVPickerView
 
-TV picker view with increment decrement operators. This view is easy to configure and allows user to pick a value from values provided by delegate.
+TV picker view with increment decrement operators. 
+
+This View is a picker view which allows to pick a value from values provided by datasource.
+Navigation among values is done via increment and decrement indicator on the side.
+ 
+A picker object requires the cooperation of a delegate for showing value of anelement and a data source for providing 
+the numbers of elements. 
+The delegate must adopt the TVPickerViewDelegate protocol and implement the required methods. 
+The data source must adopt the TVPickerViewDatasource protocol and 
+implement the required methods to return the number of elements.
 
 ##Installation using CocoaPods
+
+CocoaPods is distributed as a ruby gem, installing it is as easy as running the following commands in the terminal:
+
+    $ [sudo] gem install cocoapods
+    $ pod setup
+
+Then, Create a textfile and name it Podfile in your XCode project directory.
+Then, edit the Podfile and mention your dependencies.
     
-    1. First update all Ruby gems: [sudo] gem update
-    2. Install the CocoaPods gem: [sudo] gem install cocoapods
-    3. Setup CocoaPods on your system: pod setup
+    $ edit Podfile
+    platform : ios
+    pod 'TVPickerView',     '~> 1.0.0'
     
-For [using CocoaPods](http://nsscreencast.com/episodes/5-cocoapods) watch this screencast.
+Now install the dependencies in your project :
+
+    $ pod install
+    
+Make sure to always open the Xcode workspace instead of the project file when building your project.
+
+    $ open App.xcworkspace
+    
+For more see, [using CocoaPods](http://nsscreencast.com/episodes/5-cocoapods) screencast.
     
 ##Installation without CocoaPods
-    1. Clone the TVPickerView to some directory on your machine.
+    1. Clone the TVPickerView using: 
+        git clone git@github.com:taviscaios/TVPickerView.git.
     2. Add the TVPickerView.h and TVPickerView.m to your project and use the TVPickerView.
 ##Usage
 #1. Using Interface builder:
     1. Add a view to .xib file
-    2. Set the class to TVPickerView.
+    2. Set the class of the view to TVPickerView.
     3. Just sets the datasource and delegate property.
     4. Implement the TVPickerViewDelegate and TVPickerViewDatasource methods.
 
@@ -25,6 +51,7 @@ For [using CocoaPods](http://nsscreencast.com/episodes/5-cocoapods) watch this s
     TVPickerView *programaticallyCreatedTvPickerView = [[TVPickerView alloc] initWithFrame:CGRectMake(67, 100, 186, 40)];
     [programaticallyCreatedTvPickerView setDatasource:...];
     [programaticallyCreatedTvPickerView setDelegate:...];
+    [view addSubview:programaticallyCreatedTvPickerView ];
 
 pod 'LibComponentLogging-pods'
 
