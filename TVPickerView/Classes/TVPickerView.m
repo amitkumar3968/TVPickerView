@@ -164,4 +164,9 @@
 - (void)setContentTextColor:(UIColor *)color {
     [_contentView setTextColor:color];
 }
+
+-(void)setContentTextFont:(UIFont *)font  {
+    [_contentView setFont:font];
+}
+
 @end

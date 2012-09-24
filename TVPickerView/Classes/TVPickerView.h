@@ -41,6 +41,12 @@ typedef NSString* (^titleOfPickerAtIndexBlock)(int index);
  */
 -(void)setContentTextColor:(UIColor *)color;
 
+/**
+ @abstract Used to set the font of the text.
+ @param font UIFont, font of the text.
+ */
+-(void)setContentTextFont:(UIFont *)font;
+
 /**     
  @abstract Used to set the color of increment & decerement buttons.
  @param color UIColor

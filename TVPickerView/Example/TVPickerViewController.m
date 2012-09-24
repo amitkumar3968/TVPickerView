@@ -37,6 +37,8 @@
     
     [_tvPickerView setDelegate:self];
     [_tvPickerView setDatasource:self];
+    [_tvPickerView setContentTextFont:[UIFont boldSystemFontOfSize:20]];
+    
     TVPickerView *programaticallyCreatedTvPickerView = [[TVPickerView alloc] initWithFrame:CGRectMake(67, 100, 186, 40)];
     [programaticallyCreatedTvPickerView setDatasource:self];
     [programaticallyCreatedTvPickerView setContentTextColor:[UIColor blueColor]];
