@@ -12,9 +12,9 @@ typedef NSString* (^titleOfPickerAtIndexBlock)(int index);
 @protocol TVPickerViewDelegate, TVPickerViewDatasource;
 
 /** 
-    Custom picker view with increment decrement operations.
+Custom picker view with increment decrement operations.
  
-    Example usage:
+Example usage:
         TVPickerView *tvPickerView = [[TVPickerView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
         tvPickerView.delegate = //set delegate
         tvPickerView.dataSource = //set dataSouce
@@ -73,14 +73,14 @@ typedef NSString* (^titleOfPickerAtIndexBlock)(int index);
 -(void)reloadData;
 
 /**
-    @abstract Return the current index
-    @return selected index
+ @abstract Return the current index
+ @return selected index
  */
 -(NSInteger)selectedIndex;
 
 /**
-    @abstract Set the current index.
-    @param value
+ @abstract Set the current index.
+ @param value
  */
 -(void)setSelectedIndex:(NSInteger)value;
 @end

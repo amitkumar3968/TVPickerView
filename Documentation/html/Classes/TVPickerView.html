@@ -61,6 +61,8 @@
 	
 	<option value="//api/name/setContentTextColor:">&nbsp;&nbsp;&nbsp;&nbsp;- setContentTextColor:</option>
 	
+	<option value="//api/name/setContentTextFont:">&nbsp;&nbsp;&nbsp;&nbsp;- setContentTextFont:</option>
+	
 	<option value="//api/name/setIncrementDecrementTextColor:">&nbsp;&nbsp;&nbsp;&nbsp;- setIncrementDecrementTextColor:</option>
 	
 	<option value="//api/name/setSelectedIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setSelectedIndex:</option>
@@ -111,6 +113,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setContentTextColor:">setContentTextColor:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setContentTextFont:">setContentTextFont:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setIncrementDecrementTextColor:">setIncrementDecrementTextColor:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSelectedIndex:">setSelectedIndex:</a></span></li>
@@ -152,10 +156,11 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<pre><code>Custom picker view with increment decrement operations.
+						<p>Custom picker view with increment decrement operations.</p>
 
-Example usage:
-    TVPickerView *tvPickerView = [[TVPickerView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+<p>Example usage:</p>
+
+<pre><code>    TVPickerView *tvPickerView = [[TVPickerView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     tvPickerView.delegate = //set delegate
     tvPickerView.dataSource = //set dataSouce
     [parentView addSubView:tvPickerView];
@@ -198,6 +203,13 @@ Example usage:
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/setContentTextFont:">&ndash;&nbsp;setContentTextFont:</a></code>
+		<span class="tooltip"><p>@abstract Used to set the font of the text.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/setIncrementDecrementTextColor:">&ndash;&nbsp;setIncrementDecrementTextColor:</a></code>
 		<span class="tooltip"><p>@abstract Used to set the color of increment &amp; decerement buttons.</p></span>
 	</span>
@@ -227,17 +239,14 @@ Example usage:
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/selectedIndex">&ndash;&nbsp;selectedIndex</a></code>
-		<span class="tooltip"><pre><code>@abstract Return the current index
-</code></pre></span>
+		<span class="tooltip"><p>@abstract Return the current index</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setSelectedIndex:">&ndash;&nbsp;setSelectedIndex:</a></code>
-		<span class="tooltip"><pre><code>@abstract Set the current index.
-@param value
-</code></pre></span>
+		<span class="tooltip"><p>@abstract Set the current index.</p></span>
 	</span>
 	
 	
@@ -394,8 +403,7 @@ Example usage:
 	
 	
 	<div class="method-subsection brief-description">
-		<pre><code>@abstract Return the current index
-</code></pre>
+		<p>@abstract Return the current index</p>
 	</div>		
 	
     
@@ -417,8 +425,7 @@ Example usage:
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>@abstract Return the current index
-</code></pre>
+		<p>@abstract Return the current index</p>
 	</div>
 	
 	
@@ -599,6 +606,57 @@ Example usage:
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/setContentTextFont:" title="setContentTextFont:"></a>
+	<h3 class="subsubtitle method-title">setContentTextFont:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract Used to set the font of the text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setContentTextFont:(UIFont *)<em>font</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>UIFont, font of the text.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@abstract Used to set the font of the text.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TVPickerView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/setIncrementDecrementTextColor:" title="setIncrementDecrementTextColor:"></a>
 	<h3 class="subsubtitle method-title">setIncrementDecrementTextColor:</h3>
 	
@@ -656,9 +714,7 @@ Example usage:
 	
 	
 	<div class="method-subsection brief-description">
-		<pre><code>@abstract Set the current index.
-@param value
-</code></pre>
+		<p>@abstract Set the current index.</p>
 	</div>		
 	
     
@@ -675,9 +731,9 @@ Example usage:
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>@abstract Set the current index.
-@param value
-</code></pre>
+		<p>@abstract Set the current index.</p>
+
+<p>@param value</p>
 	</div>
 	
 	
@@ -707,7 +763,7 @@ Example usage:
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Tavisca software. All rights reserved. (Last updated: 2012-09-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Tavisca software. All rights reserved. (Last updated: 2012-09-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
