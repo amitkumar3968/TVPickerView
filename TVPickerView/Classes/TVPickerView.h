@@ -80,9 +80,16 @@ Example usage:
 
 /**
  @abstract Set the current index.
- @param value
+ @param value value to set
  */
 -(void)setSelectedIndex:(NSInteger)value;
+
+/**
+ @abstract Set the current index.
+ @param value value to set
+ @param doReload Do update View
+ */
+-(void)setSelectedIndex:(NSInteger) index andReloadView:(BOOL)doReload;
 @end
 
 @protocol TVPickerViewDelegate <NSObject>

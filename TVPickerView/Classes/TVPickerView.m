@@ -148,6 +148,13 @@
     [self reloadData];
 }
 
+-(void)setSelectedIndex:(NSInteger) index andReloadView:(BOOL)doReload {
+    _currentIndex = index;
+    if(doReload){
+        [self reloadData];
+    }
+}
+
 - (void)setBackgroundImageOfDecrementButton:(NSString *)imageName forState:(UIControlState)state {
     [_decrementIndexBtn setBackgroundImage:[UIImage imageNamed:imageName] forState:state];
 }
